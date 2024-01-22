@@ -239,16 +239,16 @@ button:focus-visible::after{
    }
 
    .slider{
-   width: 250%;
- gap: 20px;
+   width: 200%;
+ gap: 50px;
     display: flex;
-    overflow-y: scroll;
+    overflow-x: scroll;
     background-color: red;
    }
    
 
-.body img {
-    width: 98%;
+.slider img {
+    width: 100%;
     height: 200px;
     /* object-fit: cover;  */
     margin-left: 20px;
