@@ -44,7 +44,20 @@
 
 
     <div class="body">
-      <img src="images/standard_room.webp" alt="">
+      <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/benita_hall.jpg" alt="Image 1" width="80%">
+            </div>
+            <div class="slide">
+                <img src="images/dining.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="images/events.webp" alt="Image 3">
+            </div>
+        </div>
+        <div class="dots-container"></div>
+    </div>
     </div>
 
     <div class="container1">
@@ -166,5 +179,62 @@
           loader.style.display = 'block';
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const dotsContainer = document.querySelector('.dots-container');
+
+  let currentIndex = 0;
+
+  // Create dots
+  for (let i = 0; i < slides.length; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      dotsContainer.appendChild(dot);
+
+      dot.addEventListener('click', function () {
+          goToSlide(i);
+      });
+  }
+
+  const dots = document.querySelectorAll('.dot');
+
+  // Set initial active dot
+  dots[currentIndex].classList.add('active');
+
+  function updateDots() {
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[currentIndex].classList.add('active');
+  }
+
+  function goToSlide(index) {
+      currentIndex = index;
+      updateDots();
+      updateSlider();
+  }
+
+  function updateSlider() {
+      const translation = -currentIndex * 100 + '%';
+      slider.style.transform = 'translateX(' + translation + ')';
+  }
+
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateDots();
+      updateSlider();
+  }
+
+  function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateDots();
+      updateSlider();
+  }
+
+  // Set up navigation buttons
+ 
+});
+
+  </script>
   </body>
 </html>

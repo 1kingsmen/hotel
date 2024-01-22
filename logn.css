@@ -237,6 +237,65 @@ button:focus-visible::after{
  
 
    }
+   
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+ 
+    /* background-color: red; */
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+ 
+}
+
+.slide {
+    flex: 0 0 100%;
+    background-color: rgb(238, 237, 237);
+}
+
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.slide img {
+    width: 38%;
+    height: 200px;
+    /* object-fit: cover;  */
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+}
+
+
+/* .body img{
+    width: 80%;
+    height: 200px;
+    border-radius:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+} */
+
 
  .header  #button .button2 button{
     width: 50px;
@@ -264,13 +323,7 @@ button:focus-visible::after{
     font-weight: 600;
 } 
 
-.body img{
-    width: 89%;
-    height: 200px;
-    border-radius:20px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
+
 
         .container1{
             width: 100%;

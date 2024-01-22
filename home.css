@@ -591,6 +591,12 @@ span{
     transform: rotate(0deg);
   }
 
+  .con span{
+    margin-left: 10px;
+   
+  }
+
+
 
 
 
@@ -657,7 +663,7 @@ span{
   }
 
   .events span{
-    margin-left: 150px;
+    margin-left: 50px;
   }
 
 
