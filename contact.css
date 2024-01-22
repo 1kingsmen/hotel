@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border: 6px solid #F3A66C;
+    border-radius: 50%;
+    border-top: 6px solid #f3f3f3;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+
+
+
+
+/* General styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff ;
+    margin-bottom: 60px; 
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3A66C;
+    padding: 20px 50px;
+    position: relative;
+}
+
+.logo {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.toggle-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #000;
+    display: none;
+    margin: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 25px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.nav-links li a:hover {
+    color: #F7E1AB;
+}
+
+.container1{
+    width: 100%;
+    height: 500px;
+    /* background-color: #fff; */
+    margin-top: 18%;
+  
+}
+
+.input-box{
+  
+    width: 40%;
+    padding: 20px;
+}
+
+
+
+.email{
+  
+  
+    margin-top: 30px;
+    /* background-color: #000; */
+}
+
+.container1 form .input-box input[type="email"] {
+    width: 100%;
+    height: 40px;
+}
+
+.container1 form .input-box .email input{
+    text-transform: lowercase;
+}
+
+.address{
+    margin-top: 30px;
+}
+
+.num{
+    display: flex;
+   margin-top: 20px;
+   gap: 35px;
+   margin-left: 15px;
+}
+.num label{
+    font-size: 17px;
+}
+
+
+
+
+
+
+.container1 form .input-box input[type="text"] {
+    width: 100%;
+    height: 40px;
+}
+
+
+button{
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    position: relative;
+    isolation: isolate;
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#F3A66C, #F5C187);
+    inset: 0;
+
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 450ms;
+}
+
+button:hover,
+button:focus-visible::after{
+    transform-origin: right;
+    scale: 1 1;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.navbar{
+    display: none;
+}
+
+
+
+
+.link2 {
+    width: 100%;
+    height: 60px;
+    background-color: #E2E2E2;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999; /* Ensure it's above other elements */
+  }
+    i{
+        font-size: 20px;
+        margin-top: 20px;
+        color: #000;
+    }
+
+    /* .i{
+        margin-top: ;
+    } */
+
+    p{
+        text-transform: capitalize;
+position: relative;
+bottom: 10px;
+font-size: 18px;
+
+    }
+
+    .icon1{
+        text-align: center;
+        padding: 8px;
+     
+    }
+
+    .icon2{
+        text-align: center;
+        padding: 8px;
+    }
+
+    .icon3{
+        text-align: center;
+        padding: 8px;
+    }
+
+    .icon4{
+        text-align: center;
+        padding: 8px;
+    }
+
+ .nav a.active{
+    color: red;
+ }
+
+
+
+ .p{
+    text-transform: capitalize;
+   margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.body iframe {
+    width: 89%;
+    height: 200px;
+    border-radius:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+        .container1{
+            width: 100%;
+            height: 600px;
+           /* border-top: 1px solid black;
+           border-bottom: 1px solid black; */
+            margin-top: 5%;
+            background-color: #fff;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            /* background-color: red;
+             */
+
+         
+        }
+        
+        .input-box{
+       
+            width: 100%;
+            height: 450px;
+gap: 30px;
+          
+        }
+
+        label{
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: 100;
+        }
+        
+        .container1 form .input-box input[type="text"] {
+            width: 100%;
+            height: 40px;
+        }
+        
+       
+
+ 
+
+        select{
+            border-radius: 5px;
+        }
+
+input{
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 0;
+    outline: 0;
+  border-bottom: 1px solid black;
+  
+  
+}
+
+.name1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name1 label{
+    margin-top: 10px;
+}
+
+.name2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.name2 label{
+    margin-top: 10px;
+}
+
+        .num label{
+            font-size: 17px;
+        }
+        
+        .room{
+            margin-top: 30px;
+            
+        }
+        
+        .room select{
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            text-transform: capitalize;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid black;
+        }
+
+        .room select option{
+            font-size: 20px;
+            font-family: nunito;
+            text-transform: capitalize;
+          
+        }
+
+    
+
+
+        
+::placeholder{
+    font-size: 15px;
+  
+}
+        
+button{
+    width: 200px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 20px;
+    text-transform: capitalize;
+  border-radius: 100px;
+    border: 1px solid black;
+  
+    position: relative;
+    isolation: isolate;
+    background: transparent;
+  letter-spacing: 2px;
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#F3A66C, #F5C187);
+    inset: 0;
+    border-radius: 100px;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 450ms;
+}
+
+button:hover::after,
+button:focus-visible::after{
+    transform-origin: left;
+    scale: 1 1;
+    border-radius: 100px;
+}
+
+
+
+   
+
+.num select{
+    width: 50px;
+    font-size: 17px;
+    font-family: nunito;
+    border: 1px solid black;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+
+.link2{
+    width: 100%;
+    height: 60px;
+    background-color:#E2E2E2;
+    position: fixed;
+    bottom: 0;
+  
+    display: flex;
+    justify-content: space-around;
+}
+
+i{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000;
+}
+
+
+ 
+  
+}
+
+@media screen and (min-width: 610px) {
+
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .toggle-button,
+    .toggle-button .bar {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(#F3A66C, #F5C187);
+        padding: 25px;
+        text-align: center;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        transition: 0.4s ease;
+    }
+
+    .nav-links li {
+        padding: 12px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+
+    .link2{
+        display: none;
+    }
+
+
+    .body iframe {
+        width: 95%;
+        height: 300px;
+      
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .p{
+        text-transform: capitalize;
+       margin-left: 20px;
+        margin-top: 20px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    
+            .container1{
+                width: 100%;
+                height: 600px;
+                padding-left: 5%;
+                
+               /* border-top: 1px solid black;
+               border-bottom: 1px solid black; */
+                margin-top: 5%;
+                background-color: #fff;
+                /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+                /* background-color: red;
+                 */
+    
+             
+            }
+            
+            .input-box{
+           
+                background-color: #fff;
+                width: 95%;
+                height: 350px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 30px;
+    padding-left: 100px;
+   
+              
+              
+            }
+    
+            label{
+                text-transform: capitalize;
+                font-size: 25px;
+                font-weight: 100;
+            }
+            
+            .container1 form .input-box input[type="text"] {
+                width: 80%;
+                height: 40px;
+            }
+            
+           
+            .container1 form .input-box input[type="email"] {
+                width: 80%;
+                height: 40px;
+            }
+     
+    
+            select{
+                border-radius: 5px;
+            }
+    
+    input{
+        font-size: 20px;
+        text-transform: capitalize;
+        border: 0;
+        outline: 0;
+      border-bottom: 1px solid black;
+      
+      
+    }
+    
+    .name1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .name1 label{
+        margin-top: 10px;
+    }
+    
+    .name2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .name2 label{
+        margin-top: 10px;
+    }
+    
+            .num label{
+                font-size: 17px;
+            }
+            
+            .room{
+                margin-top: 30px;
+                
+            }
+            
+            .room select{
+                width: 100%;
+                height: 40px;
+                font-size: 20px;
+                text-transform: capitalize;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid black;
+            }
+    
+            .room select option{
+                font-size: 20px;
+                font-family: nunito;
+                text-transform: capitalize;
+              
+            }
+    
+        
+    
+    
+            
+    ::placeholder{
+        font-size: 15px;
+      
+    }
+            
+    button{
+        width: 200px;
+        height: 40px;
+        margin-top: 40px;
+        margin-left: 60px;
+        font-size: 20px;
+        text-transform: capitalize;
+      border-radius: 100px;
+        border: 1px solid black;
+      
+        position: relative;
+        isolation: isolate;
+        background: transparent;
+      letter-spacing: 2px;
+    }
+    
+    button::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(#F3A66C, #F5C187);
+        inset: 0;
+        border-radius: 100px;
+        scale: 0 1;
+        transform-origin: right;
+        transition: scale 450ms;
+    }
+    
+    button:hover::after,
+    button:focus-visible::after{
+        transform-origin: left;
+        scale: 1 1;
+        border-radius: 100px;
+    }
+    
+    
+    
+       
+    
+    .num select{
+        width: 50px;
+        font-size: 17px;
+        font-family: nunito;
+        border: 1px solid black;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    
+    
+    .link2{
+        width: 100%;
+        height: 60px;
+        background-color:#E2E2E2;
+        position: fixed;
+        bottom: 0;
+      
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    i{
+        font-size: 20px;
+        margin-top: 20px;
+        color: #000;
+    }
+    
+    .link2{
+        display: none;
+            }
+   
+
+}
+@media screen and (min-width: 1200px) {
+
+    .link2{
+display: none;
+    }
+  
+}

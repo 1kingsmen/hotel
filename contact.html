@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>ABOUT PAGE</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">logo</div>
+            <div class="toggle-button" id="toggle-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT US</a></li>
+                <li><a href="login.php">BOOKING</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="p">
+        <p>contact us</p>
+    </div>
+
+    <div class="body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62889.139244935395!2d8.841376674801166!3d9.88629525251294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053745f09c0ca1f%3A0xfbf477db187abac9!2sSilk%20Suites!5e0!3m2!1sen!2sng!4v1703419032167!5m2!1sen!2sng" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="container1">
+        <form action="send.php" method="POST" id="contactForm">
+            <div class="input-box">
+                <div class="name">
+                    <label for="full-name">Full Name</label><br>
+                    <input type="text" placeholder="Full Name" name="full-name" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+
+                <div class="address">
+                    <label for="address">Address</label><br>
+                    <input type="text" placeholder="Address" name="address" required>
+                </div>
+
+                <div class="message">
+                    <label for="message">Message</label><br>
+                    <textarea placeholder="Your message" name="message" required></textarea>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" name="sendContact">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <div class="nav">
+        <div class="link2">
+            <div class="icon1">
+                <div class="i">
+                    <a href="home.html"><i><ion-icon name="home-outline"></ion-icon></i></a>
+                </div>
+                <p>home</p>
+            </div>
+            <div class="icon2">
+                <a href="about.html"><i><ion-icon name="person-outline"></ion-icon></i></a>
+                <p>about</p>
+            </div>
+            <div class="icon3">
+                <a href="login.php"><i><ion-icon name="book-outline"></ion-icon></i></a>
+                <p>booking</p>
+            </div>
+            <div class="icon4">
+                <a href="contact.html"><i><ion-icon name="phone-portrait-outline"></ion-icon></i></a>
+                <p>contact</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const togglebutton = document.getElementById('toggle-button');
+        const navlinks = document.getElementById('nav-links');
+
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active');
+        });
+
+
+
+
+
+        const contactForm = document.getElementById('contactForm');
+
+contactForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    document.getElementById('loader').style.display = 'block';
+
+    // Now you can proceed with any additional actions or submit the form using AJAX
+    // Example: You can use fetch or XMLHttpRequest to submit the form data asynchronously
+    fetch('send.php', {
+        method: 'POST',
+        body: new FormData(contactForm),
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Handle the response or perform any other actions
+        document.location.href = 'sent.php';
+        document.getElementById('loader').style.display = 'none';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+    </script>
+</body>
+</html>
