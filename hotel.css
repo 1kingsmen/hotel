@@ -143,6 +143,7 @@ img {
 
 .content2 {
     margin-top: 20px;
+    overflow-x: scroll;
 }
 
 .sub-content {
