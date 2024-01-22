@@ -47,7 +47,7 @@ if (isset($_POST["sendBooking"])) {
 
         echo "
         <script>
-            document.location.href = 'sent.php';
+            document.location.href = 'sent.html';
             document.getElementById('loader').style.display = 'none'; 
         </script>";
     } catch (Exception $e) {
