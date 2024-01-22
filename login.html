@@ -44,19 +44,7 @@
 
 
     <div class="body">
-   
-        <div class="slider">
-            <div class="slide active">
-                <img src="images/benita_hall.jpg" alt="Image 1" width="80%">
-            </div>
-            <div class="slide">
-                <img src="images/dining.jpg" alt="Image 2">
-            </div>
-            <div class="slide">
-                <img src="images/events.webp" alt="Image 3">
-            </div>
-        </div>
-     
+      <img src="images/standard_room.webp" alt="">
     </div>
 
     <div class="container1">
@@ -165,10 +153,18 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-   
- 
-  
+    <script>
+      const toggleButton = document.getElementById('toggle-button');
+      const navLinks = document.getElementById('nav-links');
+      const loader = document.getElementById('loader');
+      toggleButton.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
 
-  </script> 
+      const bookingForm = document.getElementById('bookingForm');
+      bookingForm.addEventListener('submit', function () {
+          loader.style.display = 'block';
+      });
+    </script>
   </body>
 </html>

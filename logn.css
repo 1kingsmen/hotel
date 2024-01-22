@@ -230,32 +230,13 @@ button:focus-visible::after{
    .header{
     display: flex;
     justify-content: space-between;
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 50px;
     padding: 10px;
  
 
    }
-
-   .slider{
-   width: 200%;
- gap: 50px;
-    display: flex;
-    overflow-x: scroll;
-    background-color: red;
-   }
-   
-
-.slider img {
-    width: 100%;
-    height: 200px;
-    /* object-fit: cover;  */
-    margin-left: 20px;
-    margin-top: 10px;
-    border-radius:20px;
-}
-
 
  .header  #button .button2 button{
     width: 50px;
@@ -283,7 +264,13 @@ button:focus-visible::after{
     font-weight: 600;
 } 
 
-
+.body img{
+    width: 89%;
+    height: 200px;
+    border-radius:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 
         .container1{
             width: 100%;
