@@ -159,82 +159,17 @@
     })
     </script>
 
-    <!-- <script
+    <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script>
-      const toggleButton = document.getElementById('toggle-button');
-      const navLinks = document.getElementById('nav-links');
-      const loader = document.getElementById('loader');
-      toggleButton.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-      });
-
-      const bookingForm = document.getElementById('bookingForm');
-      bookingForm.addEventListener('submit', function () {
-          loader.style.display = 'block';
-      });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector('.slider');
-  const slides = document.querySelectorAll('.slide');
-  const dotsContainer = document.querySelector('.dots-container');
-
-  let currentIndex = 0;
-
-  // Create dots
-  for (let i = 0; i < slides.length; i++) {
-      const dot = document.createElement('div');
-      dot.classList.add('dot');
-      dotsContainer.appendChild(dot);
-
-      dot.addEventListener('click', function () {
-          goToSlide(i);
-      });
-  }
-
-  const dots = document.querySelectorAll('.dot');
-
-  // Set initial active dot
-  dots[currentIndex].classList.add('active');
-
-  function updateDots() {
-      dots.forEach(dot => dot.classList.remove('active'));
-      dots[currentIndex].classList.add('active');
-  }
-
-  function goToSlide(index) {
-      currentIndex = index;
-      updateDots();
-      updateSlider();
-  }
-
-  function updateSlider() {
-      const translation = -currentIndex * 100 + '%';
-      slider.style.transform = 'translateX(' + translation + ')';
-  }
-
-  function nextSlide() {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateDots();
-      updateSlider();
-  }
-
-  function prevSlide() {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateDots();
-      updateSlider();
-  }
-
-  // Set up navigation buttons
+   
  
-});
+  
 
-  </script> -->
+  </script> 
   </body>
 </html>
