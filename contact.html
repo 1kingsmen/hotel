@@ -24,9 +24,17 @@
         </div>
     </header>
 
-    <div class="p">
-        <p>contact us</p>
-    </div>
+    <div class="header">
+        <div class="button2">
+          <div  id="button"><ion-icon name="arrow-back-outline"></ion-icon></div>
+        </div>
+        
+        <div class="p">
+              <p>contact us</p>
+            </div>
+        
+        </div>
+           
 
     <div class="body">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62889.139244935395!2d8.841376674801166!3d9.88629525251294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1053745f09c0ca1f%3A0xfbf477db187abac9!2sSilk%20Suites!5e0!3m2!1sen!2sng!4v1703419032167!5m2!1sen!2sng" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -64,7 +72,7 @@
 
     <div id="loader" class="loader"></div>
 
-    <div class="nav">
+    <!-- <div class="nav">
         <div class="link2">
             <div class="icon1">
                 <div class="i">
@@ -85,8 +93,17 @@
                 <p>contact</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
+
+
+    <script>
+        let btnBack = document.getElementById('button')
+        
+        btnBack.addEventListener('click',()=>{
+          window.history.back()
+        })
+        </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
