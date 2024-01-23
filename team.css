@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff ;
+}
+
+
+@media screen and (max-width: 600px) {
+    ion-icon{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+}
