@@ -76,10 +76,73 @@ body {
     display: none;
 }
 
+.container{
+ padding-left: 15px;
+ padding-top: 15px;
+}
+
+.container h1{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+ 
+.container p{
+    margin-top: 20px;
+    font-weight: 800;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container ul li{
+    margin: 12px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+hr{
+    width: 95%;
+    margin-top: 10px;
+    
+}
+
+.internet ul{
+    margin-top:8px ;
+  
+}
+
+.list{
+    display: flex;
+   margin-left: 10px;
+   gap: 60px;
+   text-transform: capitalize;
+  
+}
+
+.amenities .list{
+    gap: 120px;
+}
+
+.food .list{
+    gap: 120px;
+}
+
+.header{
+    display: flex;
+    gap: 80px;
+}
+
+button{
+    width: 150px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 18px;
+}
 
 
 
-    .link2{
+    /* .link2{
         width: 100%;
         height: 60px;
         background-color:#E2E2E2;
@@ -94,12 +157,12 @@ body {
         font-size: 20px;
         margin-top: 20px;
         color: #000;
-    }
-
+    } */
+/*  */
     /* .i{
         margin-top: ;
     } */
-
+/* 
     p{
         text-transform: capitalize;
 position: relative;
@@ -133,7 +196,7 @@ font-size: 18px;
     color: red;
  }
  
-  
+   */
 }
 
 @media screen and (min-width: 610px) {
