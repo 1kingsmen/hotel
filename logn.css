@@ -264,6 +264,15 @@ button:focus-visible::after{
     font-weight: 600;
 } 
 
+.logo{
+    display: flex;
+ gap: 10px;
+}
+
+.logo ion-icon{
+    font-size: 25px;
+}
+
 .body img{
     width: 89%;
     height: 200px;

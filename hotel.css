@@ -319,7 +319,7 @@ padding-top: 15px;
 
     footer {
         width: 100%;
-        height: 1020px;
+        height: 920px;
         padding: 10px;
         background-color: #fff;
         margin-top: 30px;
@@ -385,40 +385,47 @@ padding-top: 15px;
 
   
    
-    .under {
-        width: 100%;
-        height: 60px;
-        background-color:#F5C187;
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: space-around;
-    }
+   
+.under {
+    width: 100%;
+    height: 60px;
+    background-color:#F5C187;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
 
-    .under i {
-        font-size: 25px;
-        margin-top: 20px;
-        color: #000;
-    }
+.under i {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #000;
+}
 
-    .under p {
-        text-transform: capitalize;
-        position: relative;
-        bottom: 10px;
-        font-size: 16px;
-        font-weight: 1000;
-    }
+.under p {
+    text-transform: capitalize;
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+    font-weight: 1000;
+}
 
-    .icon1, .icon2, .icon3, .icon4 {
-        text-align: center;
-        padding: 8px;
-    }
+.icon1, .icon2, .icon3, .icon4 {
+    text-align: center;
+    padding: 8px;
+}
 
-    /* Style for the active state */
-    .active-link {
-        color: green; /* color for active links */
-      }
-  
+/* Style for the active state */
+.active-link {
+    color: green; /* color for active links */
+  }
+
+  .under a{
+    text-decoration: none;
+    color: #000;
+  }
+
 
   
 
