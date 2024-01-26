@@ -489,6 +489,34 @@ i{
 .message{
     margin-top: 25px;
 }
+
+.contact{
+   
+  
+    padding-top: 20px;
+ padding-left: 20px;
+}
+
+.contact ul{
+    list-style: none;
+}
+
+.contact ul li{
+    margin: 10px;
+    text-transform: capitalize;
+
+}
+
+.contact ul li span{
+margin-right: 15px;
+
+
+}
+
+.contact ul li span ion-icon{
+    font-size: 20px;
+ 
+}
  
   
 }
