@@ -38,10 +38,56 @@
     
     </div>
    
-        <div class="body">
-          <img src="images/standard_room.webp" alt="">
-        </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides slide">
+     
+        <img src="images/benita_hall.jpg" style="width:90%">
+     
+      </div>
     
+      <div class="mySlides slide">
+       
+        <img src="images/diplomatic_room.jpg" style="width:90%">
+      
+      </div>
+    
+      <div class="mySlides slide">
+      
+        <img src="images/duplex_room.webp" style="width:90%">
+      
+      </div>
+    
+      <div class="mySlides slide">
+      
+        <img src="images/dining.jpg" style="width:90%">
+      
+      </div>
+    
+      
+      <div class="mySlides slide">
+      
+        <img src="images/supirior_room.webp" style="width:90%">
+      
+      </div>
+    
+      <div class="mySlides slide">
+      
+        <img src="images/serviced_apartments.jpg" style="width:90%">
+      
+      </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
     <p>popular amenities</p>
 
     <div class="list">
@@ -260,6 +306,36 @@ navlinks.classList.toggle('active')
 })
 </script>
 
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("slide");
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].classList.add("slide");
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+
+  // New function to set the current slide
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+</script>
 
 
 </html>
