@@ -53,9 +53,10 @@
     </div>
 
     <div class="container1">
-      <form action=""  id="bookingForm">
+      <form action="https://api.web3forms.com/submit" method="POST" id="bookingForm">
         <div class="input-box">
           <div class="name">
+            <input type="hidden" name="access_key" value="07415705-17ee-4f15-86b8-77bc7f4d7d44">
             <label for="name">full-name</label><br>
             <input type="text" placeholder="full-name" name="name" required>
           </div>
@@ -158,7 +159,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script>
+    <!-- <script>
       const toggleButton = document.getElementById('toggle-button');
       const navLinks = document.getElementById('nav-links');
       const loader = document.getElementById('loader');
@@ -171,5 +172,13 @@
           loader.style.display = 'block';
       });
     </script>
+ -->
+
+
+    
+ <script src=" https://smtpjs.com/v3/smtp.js"></script>
+ <script src="https://web3forms.com/client/script.js" async defer></script>
+
+ 
   </body>
 </html>
