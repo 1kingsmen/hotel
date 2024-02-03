@@ -266,7 +266,108 @@ padding: 2px;
         display: none;
     }
 
-   
+    .body img{
+        width: 89%;
+        height: 180px;
+        border-radius:20px;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    
+    .container{
+     padding-left: 15px;
+     padding-top: 15px;
+     height: 1650px;
+    }
+    
+    .container h1{
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+     
+   .container  ul {
+        list-style: none;
+      }
+      
+    .container   li:before {
+        content: "";
+        display: inline-block;
+        height: 1.25em;
+      width: 1.25em;
+    margin-right: 5px;
+      vertical-align: middle;
+        background-image: url(images/checkmark-outline.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    
+     
+     
+      
+     
+     
+    .container p{
+        margin-top: 20px;
+        font-weight: 800;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    
+    .container ul li{
+        margin: 12px;
+        font-weight: 550;
+        font-size: 18px;
+    }
+    
+    hr{
+        width: 95%;
+        margin-top: 10px;
+        
+    }
+    
+    .internet ul{
+        margin-top:8px ;
+      
+    }
+    
+  .container  .list{
+        display: flex;
+     
+     
+        justify-content: space-evenly;
+       text-transform: capitalize;
+      
+    }
+    
+    .under{
+        display: none;
+    }
+    
+    
+    span{
+        background-color: lightgrey;
+    padding: 2px;
+        font-size: 15px;
+        margin-left: 5px;
+        border-radius: 5px;
+        height: 5px;
+     
+    }
+    
+    
+    
+    
+    .header{
+        display: flex;
+     gap: 10px;
+    }
+    
+    .header ion-icon{
+        font-size: 25px;
+        margin-top: 3px;
+    }
+    
+    
 
 }
 @media screen and (min-width: 1200px) {
