@@ -64,11 +64,11 @@
 
 
     <div class="container1">
-        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <form  action="https://api.web3forms.com/submit" method="POST" id="contactForm">
             <div class="input-box">
                  
                 <div class="name">
-                  
+                    <input type="hidden" name="access_key" value="b4c76f92-2d35-44f6-a996-547b10cd968c">
                     <label for="full-name">Full Name <br>
                     <input type="text" placeholder="Full Name" name="full-name" required>
                 </div>
@@ -111,40 +111,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script>
-        const togglebutton = document.getElementById('toggle-button');
-        const navlinks = document.getElementById('nav-links');
 
-        togglebutton.addEventListener('click', () => {
-            navlinks.classList.toggle('active');
-        });
-
-
-
-
-
-        const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    document.getElementById('loader').style.display = 'block';
-
-    // Now you can proceed with any additional actions or submit the form using AJAX
-    // Example: You can use fetch or XMLHttpRequest to submit the form data asynchronously
-    fetch('send.php', {
-        method: 'POST',
-        body: new FormData(contactForm),
-    })
-    .then(response => response.text())
-    .then(data => {
-        // Handle the response or perform any other actions
-        document.location.href = 'sent.php';
-        document.getElementById('loader').style.display = 'none';
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
-    </script>
 </body>
 </html>

@@ -186,6 +186,8 @@
       </div>
     </div> -->
 
+<!-- Add this div for the loader -->
+
 
 
 
@@ -254,6 +256,24 @@
     showSlides(slideIndex = n);
   }
 </script>
+
+<!-- Add this script to handle the loader -->
+<script>
+  const submitButton = document.getElementById('submit-button');
+  const loader = document.getElementById('loader');
+
+  submitButton.addEventListener('click', () => {
+    loader.style.display = 'block'; // Show the loader when the button is clicked
+
+    // Add your code to handle the form submission or any other actions
+
+    // Simulate a delay (remove this in your actual code)
+    setTimeout(() => {
+      loader.style.display = 'none'; // Hide the loader after the processing is done
+    }, 2000); // Replace 2000 with the actual time your process takes
+  });
+</script>
+
 
   </body>
 </html>

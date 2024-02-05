@@ -148,7 +148,7 @@ button{
     width: 200px;
     height: 40px;
     margin-top: 50px;
-    margin-left: 60px;
+   
     font-size: 20px;
     text-transform: capitalize;
     border-radius: 5px;
@@ -397,10 +397,10 @@ input{
 }
         
 button{
-    width: 300px;
+    width:90%;
     height: 40px;
     margin-top: 120px;
-    margin-left: 40px;
+  margin-left: 20px;
     font-size: 20px;
     text-transform: capitalize;
   border-radius: 100px;
@@ -465,10 +465,17 @@ i{
 .message textarea {
     width: 100%;
     height: 150px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: nunito;
+    border: 2px solid black;
+    border-radius: 5px;
+ 
 }
 
 .message{
     margin-top: 25px;
+   
 }
 
 .contact{
@@ -683,7 +690,7 @@ margin-right: 15px;
         width: 200px;
         height: 40px;
         margin-top: 40px;
-        margin-left: 60px;
+       
         font-size: 20px;
         text-transform: capitalize;
       border-radius: 100px;
