@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(#F3A66C, #F5C187);
+  
   
 }
 
@@ -256,9 +256,14 @@ padding-top: 15px;
     header {
         width: 100%;
         text-transform: capitalize;
-        padding-left: 10px;
-        padding-top: 10px;
+      
         font-size: 12px;
+    }
+
+    header img{
+        width: 100%;
+        height: 250px;
+        border-bottom-left-radius: 50px;
     }
 
     .navbar {
@@ -451,7 +456,7 @@ padding-top: 15px;
      overflow-x: scroll;
      overflow-y: hidden;
   
-        height: 350px;
+        height: 500px;
         text-align: center;
    
     }
@@ -460,7 +465,7 @@ padding-top: 15px;
         display: flex;
         overflow-x: scroll;
         gap: 20px;
-        /* background-color: red; */
+        
     }
     
     
@@ -566,6 +571,10 @@ padding-top: 15px;
 
     .halls{
         margin-top: 20px;
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+      
     }
 
     .halls .card1{
@@ -611,6 +620,8 @@ padding-top: 15px;
         margin-top: 5px;
     }
 
+   
+   
   
 
   
@@ -623,6 +634,8 @@ display: none;
   
     .navbar {
         padding: 20px 25px;
+      
+        background: linear-gradient(#F3A66C, #F5C187);
     }
 
     .toggle-button,
@@ -635,7 +648,7 @@ display: none;
         flex-direction: column;
         position: absolute;
         width: 100%;
-        height: 600px;
+        height: 450px;
         background: linear-gradient(#F3A66C, #F5C187);
         padding: 25px;
         text-align: center;
@@ -657,4 +670,206 @@ display: none;
     .nav-links.active {
         display: block;
     }
+
+    button {
+        width: 150px;
+        height: 40px;
+        border: 2px solid #000;
+        margin-left: 40%;
+        background-color: transparent;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    
+    button a {
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .cards{
+        display: flex;
+     overflow-x: scroll;
+     overflow-y: hidden;
+  
+        height: 350px;
+        text-align: center;
+   
+    }
+
+    .slide{
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+        /* background-color: red; */
+    }
+    
+    
+     h4{
+        position: absolute;
+        top: 40%;
+          /* color: #F3A66C; */
+          font-size: 30px;
+          color: #fff;
+    }
+    
+     .details{
+        position: absolute;
+        top: 55%;
+        /* color: #F3A66C; */
+        color: #fff;
+        font-size: 18px;
+    }
+    
+     .section{
+           position: absolute;
+        top: 80%;
+         /* color: #F3A66C; */
+         color: #fff;
+         display: flex;
+         font-size: 20px;
+    }
+    
+    .card1{
+        background: url(images/standard_room.webp);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+  
+    
+    margin-left: 20px;
+    }
+    
+    .card2{
+        background: url(images/duplex_room.webp     );
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+       
+    
+        
+    
+       
+    }
+    
+    .card3{
+        background: url(images/diplomatic_room.jpg);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+        
+    
+        
+    }
+    
+    .card4{
+        background: url(images/supirior_room.webp);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+      
+    
+    
+    }
+    
+    .card5{
+        background: url(images/serviced_apartments.jpg);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+      
+    margin-right: 20px;
+       
+    }
+    
+    .dark1{
+        background: rgba(0, 0, 0, 0.3);
+        width: 400px;
+        height: 250px; 
+        padding-left: 10px;
+        border-radius: 20px;
+    }
+    
+     hr{
+     width: 230px;
+      border: 1px solid #fff;
+      position: relative;
+      top: 75%;
+    }
+
+    .halls{
+        margin-top: 20px;
+    }
+
+    .halls .card1{
+        background: url(images/benita_hall.jpg);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+      
+   
+       
+    }
+
+    .halls .card2{
+        background: url(images/nnamdi_hall.jpg);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+      
+    }
+
+    .halls .card3{
+        background: url(images/thomas_hall.jpg);
+        background-size:contain ;
+        width: 400px;
+        height: 250px;
+         position: relative;
+         border-radius: 20px;
+      
+    margin-right: 20px;
+       
+    }
+
+  .section  ion-icon{
+        margin-left: 50px;
+        color: white;
+        font-size: 39px;
+    }
+
+    .price{
+        margin-top: 5px;
+    }
+
+    .facilities{
+        width: 100%;
+       padding: 20px;
+       background-color: #fff;
+        
+    }
+    .facilities h2{
+    font-size: 50px;
+    }
+
+    h3 {
+        margin: 20px;
+        font-size: 35px;
+        text-transform: capitalize;
+        color: hsl(8, 47%, 25%); /* Dark color */
+    }
+
 }

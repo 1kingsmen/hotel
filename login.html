@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="logn.css" />
     <title>MY HOTEL</title>
@@ -33,138 +34,125 @@
   <div  id="button"><ion-icon name="arrow-back-outline"></ion-icon></div>
 </div>
 
-<div class="logo">
-  <ion-icon name="book"></ion-icon>   
-  <div class="p">
-      <p>booking a room</p>
+
+
+</div>
+   
+
+
+
+
+ 
+<div class="room-image">
+  <img id="selected-room-image" src="images/supirior_room.webp" alt="Selected Room Image">
+</div>
+<hr>
+<h4 id="selected-room-type-heading" class="head">fff</h4>
+<h3>description</h3>
+<p id="selected-room-description"></p>
+<p id="selected-room-price"></p>
+
+<div class="container3">
+<h3>facilities</h3>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fa fa-bed" aria-hidden="true"></i>
+      <p>bed</p>
     </div>
-  
+    <div class="card">
+      <i class="fa fa-bath" aria-hidden="true"></i>
+    </div>
+    <div class="card">
+      <i class="fa fa-television" aria-hidden="true"></i>
+    </div>
+    <div class="card">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+    <div class="card">
+      <i class="fa fa-wifi" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+<div class="book">
+  <button><a onclick="hideshow()">book now</a></button>
 </div>
 
 
+<div class="container1   slide-in-bottom" id="main">
+  <h1>make a reservation</h1>
+  <form action="https://api.web3forms.com/submit" method="POST" id="bookingForm">
+    <div class="input-box">
+      <div class="name">
+        <input type="hidden" name="access_key" value="07415705-17ee-4f15-86b8-77bc7f4d7d44">
+        <label for="name">full-name</label><br>
+        <input type="text" placeholder="full-name" name="name" required>
+      </div>
+
+      <div class="date">
+        <div class="name1">
+          <label for="check-in">check-in</label><br>
+          <input type="date" name="check-in" required>
+        </div>
+
+        <div class="name2">
+          <label for="check-out">check-out</label><br>
+          <input type="date" name="check-out" required>
+        </div>
+      </div>
+
+      <div class="name">
+        <div class="room">
+          <div class="room-selection">
+          <label for="room-select">choose a room</label><br>
+          <select name="room-select" id="room-select">
+            <option value="choose" selected disabled>choose-one</option>
+            <option value="standard">standard room</option>
+            <option value="service">serviced room</option>
+            <option value="suprior">supirior room</option>
+            <option value="deplomatic">deplomatic room</option>
+            <option value="duplex">duplex room</option>
+          </select>
+        </div>
 </div>
-   
-
-
-
-
- 
-<div class="slideshow-container">
-
-  <div class="mySlides slide">
-  
-    <img src="images/standard_room.webp" style="width:90%">
- 
-  </div>
-
-  <div class="mySlides slide">
-   
-    <img src="images/diplomatic_room.jpg" style="width:90%">
-  
-  </div>
-
-  <div class="mySlides slide">
-  
-    <img src="images/duplex_room.webp" style="width:90%">
-  
-  </div>
-
- 
-
-  
-  <div class="mySlides slide">
-  
-    <img src="images/supirior_room.webp" style="width:90%">
-  
-  </div>
-
-  <div class="mySlides slide">
-  
-    <img src="images/serviced_apartments.jpg" style="width:90%">
-  
-  </div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
- 
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-
-
-    <div class="container1">
-      <form action="https://api.web3forms.com/submit" method="POST" id="bookingForm">
-        <div class="input-box">
+        <div class="num">
           <div class="name">
-            <input type="hidden" name="access_key" value="07415705-17ee-4f15-86b8-77bc7f4d7d44">
-            <label for="name">full-name</label><br>
-            <input type="text" placeholder="full-name" name="name" required>
-          </div>
-
-          <div class="date">
-            <div class="name1">
-              <label for="check-in">check-in</label>
-              <input type="date" name="check-in" required>
-            </div>
-
-            <div class="name2">
-              <label for="check-out">check-out</label>
-              <input type="date" name="check-out" required>
-            </div>
+            <label for="guest">number of guest</label><br>
+            <select name="select-guest" id="">
+              <option value="0" selected disabled>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
 
           <div class="name">
-            <div class="room">
-              <label for="room">choose a room</label><br>
-              <select name="select-room" id="">
-                <option value="choose" selected disabled>choose-one</option>
-                <option value="standard">standard room</option>
-                <option value="service">serviced room</option>
-                <option value="suprior">supirior room</option>
-                <option value="deplomatic">deplomatic room</option>
-                <option value="duplex">duplex room</option>
-              </select>
-            </div>
-
-            <div class="num">
-              <div class="name">
-                <label for="guest">number of guest</label><br>
-                <select name="select-guest" id="">
-                  <option value="0" selected disabled>0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-
-              <div class="name">
-                <label for="guest">number of rooms</label><br>
-                <select name="select-number-rooms" id="">
-                  <option value="0" selected disabled>0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="button">
-            <button type="submit" name="sendBooking">submit</button>
+            <label for="guest">number of rooms</label><br>
+            <select name="select-number-rooms" id="">
+              <option value="0" selected disabled>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
           </div>
         </div>
-      </form>
+         <div class="button">
+        <button type="submit" name="sendBooking">submit</button>
+      </div>
+      </div>
+     
     </div>
-    <div id="loader" class="loader"></div>
+  </form>
+</div>
 
+
+   
+  
     <!-- <div class="link2">
       <div class="icon1">
         <div class="i">
@@ -274,6 +262,139 @@
   });
 </script>
 
+
+
+<!-- <script>
+  // Function to get URL parameter value by name
+  function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+
+  // Get the selected room type from the URL
+  var selectedRoomType = getUrlParameter('room');
+
+  // Populate the select field with the selected room type
+  var roomSelect = document.getElementById('room-select');
+  var option = document.createElement('option');
+  option.value = selectedRoomType;
+  option.textContent = selectedRoomType.charAt(0).toUpperCase() + selectedRoomType.slice(1);
+  roomSelect.appendChild(option);
+
+  // Display the corresponding room image
+  var roomImage = document.getElementById('selected-room-image');
+  if (selectedRoomType === 'standard') {
+      roomImage.src = 'images/standard_room.webp';
+  } else if (selectedRoomType === 'diplomatic') {
+      roomImage.src = 'images/diplomatic_room.jpg';
+  } else if (selectedRoomType === 'duplex') {
+      roomImage.src = 'images/duplex_room.webp';
+  }
+  // Add similar conditions for other room types
+
+  // Populate the text field with the selected room type
+  var roomTypeText = document.getElementById('selected-room-type');
+  roomTypeText.textContent = selectedRoomType.charAt(0).toUpperCase() + selectedRoomType.slice(1);
+</script> -->
+
+
+<script>
+  // Function to get URL parameter value by name
+  function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  }
+
+  // Get the selected room type from the URL
+  var selectedRoomType = getUrlParameter('room');
+
+  // Display the corresponding room image
+  var roomImage = document.getElementById('selected-room-image');
+  if (selectedRoomType === 'diplomatic') {
+      roomImage.src = 'images/diplomatic_room.jpg';
+  }
+  // Add similar conditions for other room types
+
+  // Populate the room type and description
+  var roomTypeHeading = document.getElementById('selected-room-type-heading');
+  var roomDescription = document.getElementById('selected-room-description');
+   var roomPrice = document.getElementById('selected-room-price');
+   var ammenities = document.getElementById('container3')
+  if (selectedRoomType === 'diplomatic') {
+      roomTypeHeading.textContent = 'Diplomatic Room';
+      roomDescription.textContent = 'Elegant and stylish diplomatic room with premium amenities. eith a lot of things as well';
+      roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+      ammenities
+  }
+
+
+  if (selectedRoomType === 'diplomatic') {
+    roomImage.src = 'images/diplomatic_room.jpg';
+    roomTypeHeading.textContent = 'Diplomatic Room';
+    roomDescription.textContent = 'The diplomatic room is a premium accommodation option designed to cater to the needs of distinguished guests, such as diplomats, government officials, or high-profile executives. Characterized by refined decor, luxurious furnishings, and exclusive amenities, the diplomatic room offers a prestigious and sophisticated stay experience. It often includes personalized services, such as butler service, private dining options, and access to exclusive facilities, ensuring a heightened level of comfort and privacy for discerning guests. ';
+    roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+} else if (selectedRoomType === 'duplex') {
+    roomImage.src = 'images/duplex_room.webp';
+    roomTypeHeading.textContent = 'duplex Room';
+    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. This configuration offers guests privacy and versatility, making it suitable for families, groups, or travelers seeking an extended stay. With ample space and modern amenities, the duplex room combines comfort and functionality, creating a memorable and enjoyable stay for guests.';
+    roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+} else if (selectedRoomType === 'standard') {
+    roomImage.src = 'images/standard_room.webp';
+    roomTypeHeading.textContent = 'Standard Room';
+    roomDescription.textContent = 'The standard room is a comfortable and practical option for travelers seeking basic amenities and a cozy space during their stay. the standard room offers a convenient and affordable accommodation choice. Its ideal for solo travelers, couples, or small families looking for a simple yet comfortable place to rest and rejuvenate after a day of exploration or business activities.      ';
+    roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+} else if (selectedRoomType === 'serviced') {
+    roomImage.src = 'images/serviced_apartments.jpg';
+    roomTypeHeading.textContent = 'Serviced Room';
+    roomDescription.textContent = 'Serviced apartments offer a home-away-from-home experience, providing guests with the comfort, convenience, and privacy of a fully furnished apartment combined with the services and amenities of a hotel. These apartments typically feature separate living and sleeping areas, a fully equipped kitchen, and additional amenities such as laundry facilities and housekeeping services. Ideal for extended stays, business travelers, or families, serviced apartments offer flexibility and autonomy, allowing guests to tailor their experience according to their needs and preferences.';
+    roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+} else if (selectedRoomType === 'superior') {
+    roomImage.src = 'images/supirior_room.webp';
+    roomTypeHeading.textContent = 'Superior Room';
+    roomDescription.textContent = 'The superior room elevates the guest experience by offering enhanced amenities and additional space compared to the standard room. the superior room provides a more luxurious and indulgent stay. It caters to guests who appreciate added comfort and convenience, making it a popular choice for leisure travelers and those seeking a touch of luxury during their stay. ';
+    roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
+} 
+else {
+    // Handle the case if selectedRoomType doesn't match any of the predefined types
+    roomTypeHeading.textContent = 'Unknown Room Type';
+    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. This configuration offers guests privacy and versatility, making it suitable for families, groups, or travelers seeking an extended stay.';
+    roomPrice.textContent = 'what price';
+}
+
+
+
+
+  // Add similar conditions for other room types
+</script>  
+
+<script>
+function selectRoom(roomType) {
+  // Get the selected room image source
+  var selectedRoomImageSrc = document.getElementById('selected-room-image').src;
+  // Redirect to the booking page with the selected room image as a query parameter
+  window.location.href = `booking.html?room=${roomType}&image=${encodeURIComponent(selectedRoomImageSrc)}`;
+}
+</script>
+
+<script>
+  var div = document.getElementById('main')
+  var display = 0
+
+  function hideshow(){
+    if(display == 1){
+      div.style.display = 'block'
+      display = 0
+    }
+    else{
+      div.style.display = 'none'
+      display = 1
+    }
+  }
+</script>
 
   </body>
 </html>

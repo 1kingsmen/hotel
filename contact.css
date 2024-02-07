@@ -512,42 +512,8 @@ margin-right: 15px;
 @media screen and (min-width: 610px) {
 
     .navbar {
-        padding: 20px 25px;
+       display: none;
     }
-
-    .toggle-button,
-    .toggle-button .bar {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        height: 600px;
-        background: linear-gradient(#F3A66C, #F5C187);
-        padding: 25px;
-        text-align: center;
-        top: 100%;
-        left: 0;
-    }
-
-    .nav-links li a {
-        font-size: 20px;
-        color: #000;
-        text-decoration: none;
-        transition: 0.4s ease;
-    }
-
-    .nav-links li {
-        padding: 12px 0;
-    }
-
-    .nav-links.active {
-        display: block;
-    }
-
 
     .link2{
         display: none;
@@ -569,6 +535,48 @@ margin-right: 15px;
         font-size: 26px;
         font-weight: 600;
     }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+     
+    
+       }
+    
+     .header  #button .button2 button{
+        width: 50px;
+        height: 40px;
+      
+      
+      
+      
+    }
+    
+    .logo{
+        display: flex;
+     gap: 10px;
+    }
+    
+    .logo ion-icon{
+        font-size: 5px;
+    }
+    
+    .header ion-icon {
+        font-size: 50px;
+    }
+    
+    
+     .p{
+        text-transform: capitalize;
+     margin-top: 10px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
     
     
             .container1{
@@ -578,7 +586,7 @@ margin-right: 15px;
                 
                /* border-top: 1px solid black;
                border-bottom: 1px solid black; */
-                margin-top: 5%;
+                margin-top: 1%;
                 background-color: #fff;
                 /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
                 /* background-color: red;
@@ -588,13 +596,14 @@ margin-right: 15px;
             }
             
             .input-box{
-           
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 background-color: #fff;
                 width: 95%;
-                height: 350px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                height: 580px;
+                padding-left: 100px;
+           
     gap: 30px;
-    padding-left: 100px;
+   
    
               
               
@@ -677,6 +686,21 @@ margin-right: 15px;
               
             }
     
+            .message textarea {
+                width: 80%;
+                height: 150px;
+                padding: 20px;
+               font-size: 20px;
+                font-family: nunito;
+                border: 2px solid black;
+                border-radius: 5px;
+             
+            }
+            
+            .message{
+                margin-top: 25px;
+               
+            }
         
     
     
@@ -687,9 +711,9 @@ margin-right: 15px;
     }
             
     button{
-        width: 200px;
-        height: 40px;
-        margin-top: 40px;
+        width: 90%;
+        height: 60px;
+   
        
         font-size: 20px;
         text-transform: capitalize;
@@ -755,13 +779,327 @@ margin-right: 15px;
     .link2{
         display: none;
             }
+
+
+.main1{
+    display: flex;
+}
+
+            .main{
+                width: 100%;
+                height: 1400px;
+             
+             align-items: center;
+                margin-top: 20px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .contact{
+   
+  
+                padding-top: 20px;
+             padding-left: 20px;
+            }
+            
+            .contact ul{
+                list-style: none;
+            }
+            
+            .contact ul li{
+                margin: 10px;
+                text-transform: capitalize;
+            font-size: 25px;
+            }
+            
+            .contact ul li span{
+            margin-right: 15px;
+            
+            
+            }
+            
+            .contact ul li span ion-icon{
+                font-size: 25px;
+             
+            }
+             
+              
    
 
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
-    .link2{
-display: none;
+    .logo{
+        display: flex;
+     gap: 10px;
     }
-  
+    
+    .logo ion-icon{
+        font-size: 5px;
+    }
+    
+    .header ion-icon {
+        font-size: 50px;
+    }
+    
+    
+     .p{
+        text-transform: capitalize;
+     margin-top: 10px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    
+    
+            .container1{
+                width: 100%;
+                height: 600px;
+                padding-left: 5%;
+                
+               /* border-top: 1px solid black;
+               border-bottom: 1px solid black; */
+                margin-top: 1%;
+                background-color: #fff;
+                /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+                /* background-color: red;
+                 */
+    
+             
+            }
+            
+            .input-box{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: #fff;
+                width: 93%;
+                height: 580px;
+              margin-top: 50px;
+         padding-left: 500px;
+           
+    gap: 30px;
+   
+   
+              
+              
+            }
+    
+            label{
+                text-transform: capitalize;
+                font-size: 25px;
+                font-weight: 100;
+            }
+            
+            .container1 form .input-box input[type="text"] {
+                width: 100%;
+                height: 40px;
+            }
+            
+           
+            .container1 form .input-box input[type="email"] {
+                width: 100%;
+                height: 40px;
+            }
+     
+    
+            select{
+                border-radius: 5px;
+            }
+    
+    input{
+        font-size: 20px;
+        text-transform: capitalize;
+        border: 0;
+        outline: 0;
+      border-bottom: 1px solid black;
+      
+      
+    }
+    
+    .name1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .name1 label{
+        margin-top: 10px;
+    }
+    
+    .name2{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .name2 label{
+        margin-top: 10px;
+    }
+    
+            .num label{
+                font-size: 17px;
+            }
+            
+            .room{
+                margin-top: 30px;
+                
+            }
+            
+            .room select{
+                width: 100%;
+                height: 40px;
+                font-size: 20px;
+                text-transform: capitalize;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid black;
+            }
+    
+            .room select option{
+                font-size: 20px;
+                font-family: nunito;
+                text-transform: capitalize;
+              
+            }
+    
+            .message textarea {
+                width: 100%;
+                height: 150px;
+                padding: 20px;
+               font-size: 20px;
+                font-family: nunito;
+                border: 2px solid black;
+                border-radius: 5px;
+             
+            }
+            
+            .message{
+                margin-top: 25px;
+               
+            }
+        
+    
+    
+            
+    ::placeholder{
+        font-size: 15px;
+      
+    }
+            
+    button{
+        width: 90%;
+        height: 60px;
+   
+       
+        font-size: 20px;
+        text-transform: capitalize;
+      border-radius: 100px;
+        border: 1px solid black;
+      
+        position: relative;
+        isolation: isolate;
+        background: transparent;
+      letter-spacing: 2px;
+    }
+    
+    button::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(#F3A66C, #F5C187);
+        inset: 0;
+        border-radius: 100px;
+        scale: 0 1;
+        transform-origin: right;
+        transition: scale 450ms;
+    }
+    
+    button:hover::after,
+    button:focus-visible::after{
+        transform-origin: left;
+        scale: 1 1;
+        border-radius: 100px;
+    }
+    
+    
+    
+       
+    
+    .num select{
+        width: 50px;
+        font-size: 17px;
+        font-family: nunito;
+        border: 1px solid black;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    
+    
+    .link2{
+        width: 100%;
+        height: 60px;
+        background-color:#E2E2E2;
+        position: fixed;
+        bottom: 0;
+      
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    i{
+        font-size: 20px;
+        margin-top: 20px;
+        color: #000;
+    }
+    
+    .link2{
+        display: none;
+            }
+
+
+.main1{
+    display: flex;
+}
+
+            .main{
+                width: 100%;
+                height: 1200px;
+             
+             align-items: center;
+                margin-top: 50px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .contact{
+   /* background-color: red; */
+  width: 550px;
+  position: absolute
+  ;
+  top: 65%;
+  z-index: 1;
+  height: 400px;
+  margin-left: 35px;
+ 
+                padding-top: 20px;
+             padding-left:5px;
+            }
+            
+            .contact ul{
+                list-style: none;
+            }
+            
+            .contact ul li{
+                margin: 10px;
+                text-transform: capitalize;
+            font-size: 25px;
+            margin: 30px;
+            }
+            
+            .contact ul li span{
+            margin-right: 15px;
+            
+            
+            }
+            
+            .contact ul li span ion-icon{
+                font-size: 25px;
+             
+            }
 }
