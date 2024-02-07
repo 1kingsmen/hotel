@@ -46,11 +46,13 @@
 <div class="room-image">
   <img id="selected-room-image" src="images/supirior_room.webp" alt="Selected Room Image">
 </div>
+
+<h4 id="selected-room-type-heading" class="head"></h4>
 <hr>
-<h4 id="selected-room-type-heading" class="head">fff</h4>
+<p id="selected-room-price"></p>
 <h3>description</h3>
 <p id="selected-room-description"></p>
-<p id="selected-room-price"></p>
+
 
 <div class="container3">
 <h3>facilities</h3>
@@ -62,15 +64,34 @@
     </div>
     <div class="card">
       <i class="fa fa-bath" aria-hidden="true"></i>
+      <p>bath</p>
     </div>
     <div class="card">
       <i class="fa fa-television" aria-hidden="true"></i>
+      <p>t/v</p>
     </div>
     <div class="card">
       <i class="fa fa-phone" aria-hidden="true"></i>
+      <p>phone</p>
     </div>
     <div class="card">
       <i class="fa fa-wifi" aria-hidden="true"></i>
+      <p>wifi</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-car" aria-hidden="true"></i>
+      <p>park</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-cutlery" aria-hidden="true"></i>
+      <p>food</p>
+    </div>
+
+    <div class="card">
+      <i class="fa fa-beer" aria-hidden="true"></i>
+      <p>bar</p>
     </div>
   </div>
 </div>
@@ -335,12 +356,12 @@
   if (selectedRoomType === 'diplomatic') {
     roomImage.src = 'images/diplomatic_room.jpg';
     roomTypeHeading.textContent = 'Diplomatic Room';
-    roomDescription.textContent = 'The diplomatic room is a premium accommodation option designed to cater to the needs of distinguished guests, such as diplomats, government officials, or high-profile executives. Characterized by refined decor, luxurious furnishings, and exclusive amenities, the diplomatic room offers a prestigious and sophisticated stay experience. It often includes personalized services, such as butler service, private dining options, and access to exclusive facilities, ensuring a heightened level of comfort and privacy for discerning guests. ';
+    roomDescription.textContent = 'The diplomatic room is a premium accommodation option designed to cater to the needs of distinguished guests, such as diplomats, government officials, or high-profile executives. Characterized by refined decor, luxurious furnishings, and exclusive amenities, the diplomatic room offers a prestigious and sophisticated stay experience.  ';
     roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
 } else if (selectedRoomType === 'duplex') {
     roomImage.src = 'images/duplex_room.webp';
     roomTypeHeading.textContent = 'duplex Room';
-    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. This configuration offers guests privacy and versatility, making it suitable for families, groups, or travelers seeking an extended stay. With ample space and modern amenities, the duplex room combines comfort and functionality, creating a memorable and enjoyable stay for guests.';
+    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. ';
     roomPrice.textContent = 'Price: N20,000 / night'; // Adjust the price accordingly
 } else if (selectedRoomType === 'standard') {
     roomImage.src = 'images/standard_room.webp';
@@ -361,7 +382,7 @@
 else {
     // Handle the case if selectedRoomType doesn't match any of the predefined types
     roomTypeHeading.textContent = 'Unknown Room Type';
-    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. This configuration offers guests privacy and versatility, making it suitable for families, groups, or travelers seeking an extended stay.';
+    roomDescription.textContent = 'The duplex room offers a unique and spacious layout, spanning two levels within the accommodation. Typically characterized by a staircase that connects the lower and upper levels, the duplex room provides a distinct living experience with separate areas for sleeping and relaxation. ';
     roomPrice.textContent = 'what price';
 }
 

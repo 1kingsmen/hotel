@@ -428,37 +428,39 @@
   </div>
 
 
-
-  <div class="under">
+<div class="nav">
+   <div class="under">
     <div class="icon1">
        
       <div class="i">
-     <a href="home.html" class="active-link">    <i><ion-icon name="home-outline"></ion-icon></i></a>
+     <a href="tarrif.html" class="active-link">    <i><ion-icon name="home-outline"   onclick="change(this)"></ion-icon></i></a>
       </div>
-      <a href="home.html">  <p>home</p></a>
+      
       
     </div>
   <div class="icon2">
    
-    <a href="about.html"> <i><ion-icon name="person-outline"></ion-icon></i></a>
-    <a href="about.html">  <p>about</p></a>
+    <a href="about.html"> <i><ion-icon name="person-outline"  onclick="change(this)"></ion-icon></i></a>
+ 
   
   </div>
   <div class="icon3">
     
-    <a href="login.html"> <i><ion-icon name="book-outline"></ion-icon></i></a>
-    <a href="login.html"> <p>booking</p></a>
+    <a href="login.html"> <i><ion-icon name="book-outline"  onclick="change(this)"></ion-icon></i></a>
+    
    
   </div>
    
    <div class="icon4">
-  <a href="contact.html"><i><ion-icon name="phone-portrait-outline"></ion-icon></a>
-    <a href="contact.html"><p>contact</p></a>
+  <a href="contact.html"><i><ion-icon name="phone-portrait-outline" onclick="change(this)"></ion-icon></a>
+   
 
    </div>
 
    <div class="animation  start-home"></div>
     </div>
+</div>
+ 
     
   
 
@@ -502,6 +504,16 @@ togglebutton.addEventListener('click',()=>{
 <script>
   function selectRoom(roomType) {
     window.location.href = `login.html?room=${roomType}`;
+  }
+</script>
+
+<script>
+  function change(item){
+      const buttons = document.querySelectorAll('ion-icon');
+      buttons.forEach(function(obj){
+          obj.classList.remove("active");
+      });
+      item.classList.add("active");
   }
 </script>
 
