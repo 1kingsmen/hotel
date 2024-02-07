@@ -390,23 +390,16 @@ padding-top: 15px;
 
   
    
-    .nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
    
 .under {
-    width: 70%;
-    height: 55px;
-    background: #337e8f;
+    width: 100%;
+    height: 60px;
+    background-color:#F5C187;
     position: fixed;
-    bottom: 50px;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
-  align-items: center;
-    border-radius: 50px;
+    padding-left: 20px;
 }
 
 .under i {
@@ -415,7 +408,13 @@ padding-top: 15px;
     color: #000;
 }
 
-
+.under p {
+    text-transform: capitalize;
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+    font-weight: 1000;
+}
 
 .icon1, .icon2, .icon3, .icon4 {
     text-align: center;
@@ -423,18 +422,14 @@ padding-top: 15px;
 }
 
 /* Style for the active state */
+.active-link {
+    color: green; /* color for active links */
+  }
 
   .under a{
     text-decoration: none;
     color: #000;
   }
-
-  .active{
-    transform: scale(1.25) translateY(-1em);
-    background: linear-gradient(135deg, #23f,#6589ff);
-    border: 7px solid #dcdcdc;
-    color: white;
-}
 
 
   
